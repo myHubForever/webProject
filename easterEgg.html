@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>彩蛋页</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Microsoft YaHei', sans-serif;
+        }
+        
+        body {
+            background-color: #f8f8f8;
+            color: #2a2a2a;
+            line-height: 1.6;
+        }
+        
+        .container {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        /* 导航栏 */
+        nav {
+            background-color: #2a2a2a;
+            color: #aefda6;
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #aefda6;
+        }
+        
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+        
+        .nav-links a {
+            color: #aefda6;
+            text-decoration: none;
+            transition: all 0.3s;
+            padding: 0.3rem 0.5rem;
+            border-radius: 4px;
+        }
+        
+        .nav-links a:hover {
+            color: #2a2a2a;
+            background-color: #aefda6;
+        }
+        
+        /* 主体内容 */
+        main {
+            flex: 1;
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #555;
+        }
+        
+        .content-wrapper {
+            width: 100%;
+            max-width: 1200px;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+        
+        .page-header {
+            background-color: #8a958a;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 2px 10px rgba(42, 42, 42, 0.1);
+            border-left: 4px solid #aefda6;
+            text-align: center;
+        }
+        
+        .page-header h1 {
+            color: #2a2a2a;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+           
+        }
+        .page-header hr{
+			height: 3px;
+			background-color: #aefda6;
+			margin-top: -20px;
+		}
+        
+        
+        .page-content {
+            background-color: #8a958a;
+            border-radius: 8px;
+            padding: 2rem;
+            box-shadow: 0 2px 10px rgba(42, 42, 42, 0.1);
+            border-left: 4px solid #aefda6;
+        }
+        
+		.page-content p{
+			font-size: 20px;
+		}
+		
+        .back-button {
+            display: block;
+            background-color: #aefda6;
+            color: #2a2a2a;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            text-decoration: none;
+            margin-top: 1rem;
+            transition: all 0.3s;
+            font-weight: bold;
+			/*transparent 设置边框颜色完全透明 */
+            border: 1px solid transparent;
+        }
+        
+        .back-button:hover {
+            background-color: #2a2a2a;
+            color: #aefda6;
+            border-color: #aefda6;
+        }
+        
+        /* 页脚 */
+        footer {
+            background-color: #2a2a2a;
+            color: #aefda6;
+            text-align: center;
+            padding: 1.5rem;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 导航栏 -->
+        <nav>
+            <div class="logo">恭喜你发现了彩蛋</div>
+            <div class="nav-links">
+                <a href="index.html">首页</a>
+            </div>
+        </nav>
+        
+        <!-- 主体内容 -->
+        <main>
+            <div class="content-wrapper">
+                <!-- 页面标题 -->
+                <section class="page-header">
+                    <h1>致富有探索精神的你</h1>
+					<hr />
+                    <p></p>
+                </section>
+                
+                <!-- 页面内容 -->
+                <section class="page-content">
+                    <p>
+						恭喜你解锁这份隐藏的惊喜！<br />
+						就像探险家发现秘境，智者破译密码，<br />
+						你的敏锐与好奇心，让平凡之处绽放光芒。<br />
+						愿这份彩蛋为你带来加倍的快乐，<br />
+						也愿生活永远为你预留更多意想不到的精彩！
+						
+						
+						
+					</p>
+                    
+                    
+                    <div style="margin-top: 2rem; text-align: center;">
+                        <a href="index.html" class="back-button">返回主页</a>
+                    </div>
+                </section>
+            </div>
+        </main>
+        
+        <!-- 页脚 -->
+        <footer>
+            <p>© 2023 yjh的个人网页. 保留所有权利.</p>
+        </footer>
+    </div>
+</body>
+</html>
