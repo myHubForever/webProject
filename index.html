@@ -20,7 +20,7 @@
         .container {
             display: flex;
             flex-direction: column;
-            min-height: 100vh;
+            min-height: 1000px;
         }
         
         /* 导航栏 */
@@ -112,6 +112,7 @@
         .section-image img {
             width: 100%;
             border-radius: 5px;
+			/* 保持图片原始宽高比的同时，填满整个容器 */
             object-fit: cover;
             border: 2px solid #aefda6;
         }
@@ -145,6 +146,7 @@
             margin-top: 1rem;
             transition: all 0.3s;
             font-weight: bold;
+			/* 设置边框颜色为完全透明 */
             border: 1px solid transparent;
         }
         
@@ -199,11 +201,11 @@
             <div class="logo">我的个人主页</div>
 			<div class="easterEgg"><a href="easterEgg.html"></a></div>
             <div class="nav-links">
-                <a href="#about">个人介绍</a>
-                <a href="#skills">能力介绍</a>
-                <a href="#resume">个人简历</a>
-                <a href="#awards">获奖证书</a>
-                <a href="#gallery">照片墙</a>
+                <a href="子1.html">个人介绍</a>
+                <a href="子2.html">能力介绍</a>
+                <a href="#" class="jianli">个人简历</a>
+                <a href="子4.html">获奖证书</a>
+                <a href="子5.html">照片墙</a>
                 <a href="#contact">联系方式</a>
             </div>
         </nav>
@@ -243,7 +245,7 @@
                         <a href="#" class="link-button setup">下载简历</a>
                     </div>
                     <div class="section-image">
-                        <img src="image/证件照.jpg" alt="简历预览" style="width: 100px;">
+                        <img src="image/ME.jpg" alt="简历预览" style="width: 100px;">
                     </div>
                 </section>
                 
@@ -310,6 +312,10 @@
 	<script>
 		let setup=document.querySelector('.setup')
 		setup.addEventListener('click',function(){
+			alert('该功能开发中')
+		})
+		let jianli=document.querySelector('.jianli')
+		jianli.addEventListener('click',function(){
 			alert('该功能开发中')
 		})
 	</script>
